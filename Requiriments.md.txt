@@ -1,0 +1,54 @@
+# Requisitos para Executar o Script de Gerenciamento AD
+
+Este script PowerShell realiza operações de gerenciamento no Active Directory, como:
+
+- Inativar usuários
+- Reativar usuários
+- Deletar usuários
+- Resetar senha
+- Autoelevação via UAC
+- Menu interativo no console
+
+---
+
+## ⚙️ Requisitos do Sistema
+
+### ✅ Sistema Operacional
+- Windows 10, 11 ou Server 2016/2019/2022
+
+### ✅ Permissões
+- Deve ser executado com **permissões de administrador**
+- O UAC (User Account Control) deve estar ativado
+
+### ✅ PowerShell
+- PowerShell 5.1 (instalado por padrão no Windows)
+- OU PowerShell 7+ (`pwsh`) — opcional, se quiser compatibilidade ampliada
+
+---
+
+## 📦 Módulos Necessários
+
+O script requer o módulo:
+
+- `ActiveDirectory` (incluso no RSAT)
+
+### 📥 Como instalar o módulo (caso não tenha):
+
+#### 👉 Em estações Windows 10/11:
+1. Vá em **Configurações > Aplicativos > Recursos opcionais**
+2. Clique em **Adicionar um recurso**
+3. Busque por **RSAT: Ferramentas de administração de diretório ativo** e instale
+
+#### 👉 Ou via PowerShell (administrador):
+
+```powershell
+Get-WindowsCapability -Name RSAT* -Online | ? Name -like "*Directory*" | Add-WindowsCapability -Online
+
+
+Created By Wagner Vinícius
+
+
+##🧑‍💻 Autor
+##Wagner Fernandes
+##📧 [wagnerviniciusoficial@gmail.com]
+##🔗 github.com/wagnercf##
