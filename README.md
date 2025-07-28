@@ -6,5 +6,6 @@
 </BR>
 </BR>
 ✅ REQUISITOS MÍNIMOS PARA RODAR O SCRIPT
+</BR>
 <img src="https://github.com/user-attachments/assets/8eea7a6e-62ea-4103-84ba-257acbdeab92" width="350" alt="Requisitos Mínimos" />
 </BR>
